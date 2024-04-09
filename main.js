@@ -29,7 +29,7 @@ async function fetchEpisodes(showName) {
     clone.querySelector(".pet-card").dataset.species = 'dog'
     clone.querySelector("h3").textContent = episode.name
     clone.querySelector(".pet-description").innerHTML = episode.summary
-    clone.querySelector(".pet-age").textContent = `Season ${episode.season} episode ${episode.number}`
+    clone.querySelector(".pet-age").textContent = `Season ${episode.season} episode ${episode.number} (${episode.airdate})`
     clone.querySelector(".pet-card-photo img").src = episode.image ? episode.image.original : "images/fallback.jpg"
     clone.querySelector(".pet-card-photo img").alt = `episode ${episode.name}`
     wrapper.appendChild(clone)
