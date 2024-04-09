@@ -39,11 +39,6 @@ async function fetchEpisodes(showName) {
 
 }
 
-// start()
-
-// fetchEpisodes('breaking bad')
-
-
 
 const fetchButton = document.getElementById('fetchButton')
 const searchInput = document.getElementById('searchInput')
