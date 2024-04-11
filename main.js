@@ -18,7 +18,6 @@ async function fetchEpisodes(showName) {
 
   episodeData.forEach((episode) => {
     const clone = template.content.cloneNode(true)
-    clone.querySelector(".episode-card").dataset.species = "dog"
     clone.querySelector("h3").textContent = episode.name
     clone.querySelector(".episode-description").innerHTML = episode.summary
     clone.querySelector(

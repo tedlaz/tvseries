@@ -11,7 +11,6 @@ html {
 
 body {
   font-family: 'Source Sans 3', sans-serif;
-  min-width: 330px;
 }
 
 .top-section-wrapper {
@@ -192,6 +191,8 @@ body {
 .episode-card {
   overflow: hidden;
   display: grid;
+  max-width: 90%;
+  width: auto;
   grid-template-columns: 1fr;
   border-radius: 20px;
   border: 1px solid #F3F3F3;
@@ -233,7 +234,7 @@ body {
   margin: 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .episode-description {
     font-size: 1rem;
   }
@@ -244,6 +245,7 @@ body {
 
   .list-of-episodes {
     row-gap: 28px;
+    width: 100%;
   }
 
   .episode-filter {
