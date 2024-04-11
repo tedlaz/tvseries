@@ -18,14 +18,10 @@
 
       <div class="actual-top-content">
         <h1>TV Series episodes</h1>
-
         <div class="intro-buttons">
           <input type="text" id="searchInput" class="input-search" placeholder="Enter series name">
-          <button id="fetchButton" class="our-btn utility-mr">go</button>
+          <button id="fetchButton" class="our-btn utility-mr">Search for episodes</button>
         </div>
-
-
-
       </div>
 
       <div class="circle"></div>
@@ -34,21 +30,20 @@
     </div>
   </div>
 
-  <div class="page-section" id="view-pets">
+  <div class="page-section" id="view-episodes">
     <div class="page-section-inner">
       <h2 class="page-section-title">Episode list</h2>
 
+      <div class="list-of-episodes"></div>
 
-      <div class="list-of-pets"></div>
-
-      <template id="pet-card-template">
-        <div class="pet-card">
-          <div class="pet-card-text">
+      <template id="episode-card-template">
+        <div class="episode-card">
+          <div class="episode-card-text">
             <h3></h3>
-            <p class="pet-description"></p>
-            <p class="pet-age"></p>
+            <p class="episode-description"></p>
+            <p class="episode-age"></p>
           </div>
-          <div class="pet-card-photo">
+          <div class="episode-card-photo">
             <img src="" alt="">
           </div>
         </div>
@@ -60,7 +55,9 @@
   <footer class="site-footer">
     <p>&copy; 2024 Ted Lazaros. All rights reserved.</p>
   </footer>
+
   <script src="main.js"></script>
+
 </body>
 
 </html>
