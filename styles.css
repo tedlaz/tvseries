@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: 'Source Sans 3', sans-serif;
+  min-width: 328px;
 }
 
 .top-section-wrapper {
@@ -25,6 +26,7 @@ body {
   color: white;
   margin: 0 auto;
   position: relative;
+  min-width: 400px;
 }
 
 .actual-top-content {
@@ -37,8 +39,6 @@ body {
   margin: 0;
   line-height: 97.3%;
   margin: 1rem 0;
-  max-width: 525px;
-
 }
 
 .intro-text {
@@ -54,7 +54,7 @@ body {
 
 .input-search {
   display: inline-block;
-  width: 250px;;
+  width: 250px;
   font-size: 1.125rem;
   font-weight: 600;
   background-color: #ffffff;
@@ -109,8 +109,8 @@ body {
   border-radius: 50%;
   filter: blur(150px);
   position: absolute;
-  top: 62px;
-  right: -390px;
+  top: 22px;
+  right: -190px;
 }
 
 .circle-two {
@@ -121,8 +121,8 @@ body {
   border-radius: 50%;
   filter: blur(150px);
   position: absolute;
-  top: -365px;
-  left: -123px;
+  top: -265px;
+  left: -323px;
 }
 
 .page-section {
@@ -151,7 +151,7 @@ body {
 
 .list-of-episodes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(328px, 1fr)); */
   column-gap: 16px;
   row-gap: 16px;
 }
@@ -159,9 +159,7 @@ body {
 .episode-card {
   overflow: hidden;
   display: grid;
-  max-width: 90%;
-  width: auto;
-  grid-template-columns: 1fr;
+  /* width: 100%; */
   border-radius: 20px;
   border: 1px solid #F3F3F3;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.08);
@@ -214,6 +212,7 @@ body {
   .list-of-episodes {
     row-gap: 16px;
     width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   }
 
   .episode-card {
